@@ -1,0 +1,60 @@
+﻿@using ProductCatalog.BL;
+
+@model IEnumerable<ProductsReadVM>
+
+@{
+    List<SelectListItem> categories = ViewData["Categories"] as List<SelectListItem> ?? new();
+}
+
+<h3 class="text-center">Products</h3>
+
+<div class="d-flex justify-content-end">
+    <button class="btn btn-primary" onclick="document.location='/product/addproduct'">Add new Product</button>
+</div>
+
+<form asp-action="ProductFilter" method="get">
+    <label for="SelectedCategoryId">Filter by Category</label>
+    <select asp-items="categories" name="Id"></select>
+
+    <button class="btn btn-primary">Filter</button>
+</form>
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Product in Model)
+        {
+            <tr>
+                <td>@Product.ProductId</td>
+                <td>@Product.productName</td>
+                <td>@Product.Price</td>
+                <td>@Product.Category</td>
+                <td>
+                    <button class="btn btn-info" onclick="document.location='/product/ProductDetails/@Product.ProductId'">Details</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary" onclick="document.location='/product/edit/@Product.ProductId'">Edit</button>
+                </td>
+                <td>
+                    <form asp-action="Delete" asp-route-id="@Product.ProductId" method="post" id="deleteButton">
+                        <button class="btn btn-danger" type="button" onclick="confirmDelete()">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <partial name="_ConfirmDeletePartial.cshtml" />
+}

@@ -1,0 +1,39 @@
+﻿@using ProductCatalog.BL;
+@model UserRegisterVM
+
+<h3 class="text-center">Register Now</h3>
+
+@if (TempData.ContainsKey("ErrorMessage"))
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<form asp-action="Register" method="post">
+    <div class="form-group mb-2">
+        <label asp-for="FName">First Name</label>
+        <input asp-for="FName" class="form-control" />
+        <span class="text-danger" asp-validation-for="FName"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="LName">Last Name</label>
+        <input asp-for="LName" class="form-control" />
+        <span class="text-danger" asp-validation-for="LName"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span class="text-danger" asp-validation-for="Email"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="Age"></label>
+        <input asp-for="Age" class="form-control" />
+        <span class="text-danger" asp-validation-for="Age"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="Password"></label>
+        <input type="password" asp-for="Password" class="form-control" />
+        <span class="text-danger" asp-validation-for="Password"></span>
+    </div>
+
+    <button class="btn btn-primary">Register</button>
+</form>
