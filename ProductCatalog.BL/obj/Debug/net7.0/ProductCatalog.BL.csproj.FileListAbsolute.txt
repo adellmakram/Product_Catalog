@@ -1,0 +1,15 @@
+E:\ProductCatalog\ProductCatalog.BL\bin\Debug\net7.0\ProductCatalog.BL.deps.json
+E:\ProductCatalog\ProductCatalog.BL\bin\Debug\net7.0\ProductCatalog.BL.dll
+E:\ProductCatalog\ProductCatalog.BL\bin\Debug\net7.0\ProductCatalog.BL.pdb
+E:\ProductCatalog\ProductCatalog.BL\bin\Debug\net7.0\ProductCatalog.DAL.dll
+E:\ProductCatalog\ProductCatalog.BL\bin\Debug\net7.0\ProductCatalog.DAL.pdb
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\ProductCatalog.BL.csproj.AssemblyReference.cache
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\ProductCatalog.BL.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\ProductCatalog.BL.AssemblyInfoInputs.cache
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\ProductCatalog.BL.AssemblyInfo.cs
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\ProductCatalog.BL.csproj.CoreCompileInputs.cache
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\ProductCatalog.BL.csproj.CopyComplete
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\ProductCatalog.BL.dll
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\refint\ProductCatalog.BL.dll
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\ProductCatalog.BL.pdb
+E:\ProductCatalog\ProductCatalog.BL\obj\Debug\net7.0\ref\ProductCatalog.BL.dll
